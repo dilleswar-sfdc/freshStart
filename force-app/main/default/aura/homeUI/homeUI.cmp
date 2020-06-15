@@ -1,0 +1,8 @@
+<aura:component implements ="force:appHostable,forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes" controller='home'>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name ="accData" type="Object"/>
+	<lightning:input name="input1" value="{!v.accData.Name}" label="Name" />
+    <lightning:input name="input2" value="{!v.accData.Phone}" label="phone" />
+    <lightning:input name="input3" value="{!v.accData.Website}" label="Email" />
+     <lightning:input name="input4" value="{!v.accData.Rating}" label="Rating" />
+</aura:component>

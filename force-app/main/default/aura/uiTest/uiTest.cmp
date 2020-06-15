@@ -1,0 +1,8 @@
+<aura:component implements='force:appHostable' controller="uitest">
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="acc" type="Object"/>
+	<div>
+    <lightning:input name="input4"  value="{!v.acc.Name}" label="Name"></lightning:input>
+     <lightning:input name="input2" value="{!v.acc.phone}" label="phone"></lightning:input>
+    </div>
+</aura:component>
